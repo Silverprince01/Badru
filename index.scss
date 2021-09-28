@@ -7,6 +7,7 @@ body {
   font-family: sans-serif;
   background-color: var(--body-color);
 }
+/* Colors for the dark theme*/
 .darkTheme {
   --body-color: hsl(230, 17%, 14%);
   --top-color: hsl(232, 19%, 15%);
@@ -16,6 +17,7 @@ body {
   --increase: hsl(163, 72%, 41%);
   --decrease: hsl(356, 69%, 56%);
 }
+/*Colors for light theme*/
 .lightTheme {
   --body-color: hsl(0, 0%, 100%);
   --top-color: hsl(225, 100%, 98%);
