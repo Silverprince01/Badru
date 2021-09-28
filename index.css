@@ -7,6 +7,7 @@
 
 body {
   font-family: sans-serif;
+  background-color: var(--body-color);
 }
 
 .darkTheme {
@@ -30,7 +31,6 @@ body {
 }
 
 .whole {
-  background-color: var(--body-color);
   position: static;
   top: 0%;
   left: 0%;
@@ -45,7 +45,7 @@ body {
   border-radius: 0px 0px 30px 30px;
 }
 
-.whole Nav {
+.whole nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,6 +59,16 @@ body {
   margin: 0rem;
   color: var(--text);
   line-height: 2rem;
+}
+
+.whole nav .button {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .whole .switch {
@@ -112,13 +122,16 @@ body {
   border-radius: 50%;
 }
 
+.whole hr {
+  display: none;
+}
+
 Section {
   display: -ms-grid;
   display: grid;
   grid-gap: 1.3rem;
   -ms-grid-columns: 20% 20% 20% 20%;
       grid-template-columns: 20% 20% 20% 20%;
-  min-height: 30vh;
   max-width: 100%;
   padding: 2rem;
   line-height: 3rem;
@@ -263,5 +276,75 @@ Footer p.num {
   font-size: 30px;
   font-weight: bolder;
   color: var(--text);
+}
+
+@media (max-width: 378px) {
+  .whole {
+    position: static;
+  }
+  .whole Header hr {
+    display: block;
+    width: 100%;
+  }
+  .whole Header p.btm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .whole nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1% 3% 0% 5%;
+  }
+  .whole nav .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  Section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0px;
+  }
+  Section .item {
+    width: 100%;
+    height: 100%;
+  }
+  p.over {
+    text-align: left;
+    margin-top: 3%;
+  }
+  Footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0px;
+  }
+  Footer .bottom {
+    width: 100%;
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=index.css.map */
