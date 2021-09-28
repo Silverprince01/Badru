@@ -182,7 +182,6 @@ p.over {
   margin-bottom: 10px;
 }
 Footer {
-  // background-color: white;
   color: var(--text);
   display: grid;
   justify-content: center;
@@ -193,7 +192,6 @@ Footer {
   line-height: 0px;
   min-height: 30vh;
   max-width: 100%;
-  // line-height: 3rem;
   .bottom {
     background-color: var(--item-bgcolor);
     border-radius: 5px;
@@ -243,14 +241,6 @@ Footer {
     }
   }
   Section {
-    // display: grid;
-    // grid-template-columns: 0%;
-    // grid-template-rows: 20%;
-    // grid-gap: 20px 0px;
-    // margin: 0px;
-    // width: 140px;
-    // justify-content: center;
-    // align-items: center;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -268,11 +258,6 @@ Footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    // justify-content: center;
-    // align-items: center;
-    // grid-template-columns: 0%;
-    // grid-template-rows: 20%;
-    // grid-gap: 10px 0px;
     margin: 0px;
 
     .bottom {
