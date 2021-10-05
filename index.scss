@@ -28,12 +28,12 @@ body {
   --decrease: hsl(356, 69%, 56%);
 }
 .whole {
+  width: 100%;
   position: static;
   top: 0%;
   left: 0%;
-  width: 100%;
   max-height: 100%;
-  padding-bottom: 3%;
+  padding-bottom: 0%;
   Header {
     background-color: var(--top-color);
     border-radius: 0px 0px 30px 30px;
@@ -218,14 +218,19 @@ Footer {
     color: var(--text);
   }
 }
+.name {
+  text-align: center;
+  color: var(--text);
+}
 
-@media (max-width: 378px) {
+@media (max-width: 414px) {
   .whole {
     position: static;
     Header {
       hr {
         display: block;
-        width: 100%;
+        width: 80%;
+        margin-top: 20px;
       }
       p.btm {
         display: flex;
@@ -239,6 +244,7 @@ Footer {
       .button {
         display: flex;
         justify-content: space-between;
+        width: 80%;
       }
     }
   }
